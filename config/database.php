@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'default' => env('DB_CONNECTION', 'mysql'),
+    'default' => env('DB_CONNECTION', 'firebase'),
 
     /*
     |--------------------------------------------------------------------------
@@ -91,6 +91,11 @@ return [
             'prefix_indexes' => true,
             // 'encrypt' => env('DB_ENCRYPT', 'yes'),
             // 'trust_server_certificate' => env('DB_TRUST_SERVER_CERTIFICATE', 'false'),
+        ],
+        'firebase' => [
+            'driver' => 'firebase',
+            'credentials' => storage_path('firebase/gestionscolaire-f3c19-firebase-adminsdk-icp8q-4283c4b8f7.json'), // Path to the credentials file
+            'database_url' => env('FIREBASE_DATABASE_URL'), // Firebase Realtime Database URL or Firestore URL
         ],
 
     ],
