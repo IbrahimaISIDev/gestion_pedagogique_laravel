@@ -7,7 +7,7 @@ Route::get('/test-firebase', function () {
     try {
         // Initialize Firebase with service account credentials
         $firebase = (new Factory)
-            ->withServiceAccount(storage_path('firebase/gestionscolaire-f3c19-firebase-adminsdk-icp8q-4283c4b8f7.json')) // Path to Firebase credentials
+            ->withServiceAccount(storage_path('firebase/gestionscolaire-f3c19-firebase-adminsdk-icp8q-633d95c4c6.json')) // Path to Firebase credentials
             ->withDatabaseUri(env('FIREBASE_DATABASE_URL')); // Firebase Realtime Database URL
         
         // Access Firebase Realtime Database

@@ -94,7 +94,7 @@ return [
         ],
         'firebase' => [
             'driver' => 'firebase',
-            'credentials' => storage_path('firebase/gestionscolaire-f3c19-firebase-adminsdk-icp8q-4283c4b8f7.json'), // Path to the credentials file
+            'credentials' => storage_path('firebase/gestionscolaire-f3c19-firebase-adminsdk-icp8q-633d95c4c6.json'), // Path to the credentials file
             'database_url' => env('FIREBASE_DATABASE_URL'), // Firebase Realtime Database URL or Firestore URL
         ],
 
